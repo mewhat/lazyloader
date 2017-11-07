@@ -5,6 +5,7 @@
 - window
 
 ## API说明
+
 ### lazyloader.lazy(el, pEl, distance, fn);
 ```
 /**
