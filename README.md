@@ -36,7 +36,7 @@ lazyloader.remove("mini");
   </div>
 </div>
 
-<script src="../lib/lazyloader0.js"></script>
+<script src="../lib/lazyloader1.js"></script>
 <script type="text/javascript">
   var init = function () {
     setTimeout(function() {
@@ -81,7 +81,7 @@ init() {
 ├── lib                         // the main code                    
 │   ├── lazyloader.js           // v1.0.0                         
 │   ├── lazyloader0.js          // v1.0.1                        
-│   ├── lazyloader2.js          // v1.0.3                        
+│   ├── lazyloader1.js          // v1.0.3                        
 ├── test                        // test                        
 │   └── test.html               // test.html                        
 ├── README.md                   // readme                        
