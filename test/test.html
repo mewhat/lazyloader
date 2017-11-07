@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      #pre {
+        height: 400px; width: 300px; background: blue;
+      }
+      .midd .test {
+        height: 300px; width: 100%; background: #ddd; margin-top: 10px;
+      }
+      .midd #mini {
+        height: 300px; width: 100%; background: #ddd;
+      }
     </style>
 </head>
 <body>
-    <div class="test" style="height: 300px; width: 100%; background: #ddd; margin-top: 10px;"></div>
-    <div class="test" style="height: 300px; width: 100%; background: #ddd; margin-top: 10px;"></div>
-    <div class="test" style="height: 300px; width: 100%; background: #ddd; margin-top: 10px;"></div>
-    <div class="test" style="height: 300px; width: 100%; background: #ddd; margin-top: 10px;"></div>
-    <div class="test" style="height: 300px; width: 100%; background: #ddd; margin-top: 10px;"></div>
-    <div class="test" style="height: 300px; width: 100%; background: rgb(233, 6, 6); margin-top: 10px;"></div>
-    <div id="mini" style="height: 300px; width: 100%; background: #ddd;">
-        iflsdjflksjfldsjlfjdslfjslfjlsdajflsdajflkdsjflsda
+    <div id="pre">
+      <div class="midd">
+        <div class="test"></div><div class="test"></div><div class="test"></div>
+        <div class="test"></div><div class="test"></div><div class="test"></div>
+        <div id="mini">
+          <p>2333333</p>
+        </div>
+      </div>
     </div>
     <!-- <script src="./test.js"></script> -->
-    <script src="../lib/lazyloader0.js"></script>
+    <script src="../lib/lazyloader1.js"></script>
     <script type="text/javascript">
       var init = function () {
           setTimeout(function() {
@@ -38,7 +47,11 @@
           }, 100);
       }
       // window.lazyloader('mini', 200, init);.lazy('mini', 200, init);
-      window.lazyloader.lazy('mini', 200, init);
+      window.lazyloader.lazy('mini', 'pre', 200, init);
+      setTimeout(function() {
+        // 5S之后移除监听器
+        window.lazyloader.remove('mini');
+      }, 5000);
     </script>
 </body>
 </html>

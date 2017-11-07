@@ -1,8 +1,8 @@
 {
   "name": "lazyloadermini",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a mini lazyloader",
-  "main": "./lib/lazyloader0.js",
+  "main": "./lib/lazyloader2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
