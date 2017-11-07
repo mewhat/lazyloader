@@ -1,0 +1,18 @@
+{
+  "name": "lazyloadermini",
+  "version": "1.0.1",
+  "description": "a mini lazyloader",
+  "main": "./lib/lazyloader0.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mewhat/lazyloader.git"
+  },
+  "keywords": [
+    "lazyloader"
+  ],
+  "author": "mewhat mewhatzq@163.com",
+  "license": "MIT"
+}
