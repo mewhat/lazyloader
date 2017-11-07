@@ -14,7 +14,6 @@
  * @param distance 距离触发的大小，即缓冲区高度/宽度
  * @param fn callback 回调函数
  */
-
 lazyloader.lazy("mini", "pre", 300, this.init);
 ```
 
